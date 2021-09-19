@@ -1,6 +1,5 @@
 images.image: "net_device.png" COMP;
 images.image: "net_rx.png" COMP;
-images.image: "tx.png" COMP;
 images.image: "net_tx.png" COMP;
 images.image: "net_lamp.png" COMP;
 
