@@ -44,21 +44,21 @@
 efl_version: 1 20;
 
 data {
-	item: "theme/name"      "seven";
-	item: "theme/version"   "0.1.0";
-	item: "theme/author"    "Bodhi Team";
-	item: "theme/license"   "BSD Artistic License";
-	item: "gtk-theme"       "Windows Vista";
-	item: "icon-theme"      "MokshaSeven-Icons";
+    item: "theme/name"      "seven";
+    item: "theme/version"   "0.1.0";
+    item: "theme/author"    "Bodhi Team";
+    item: "theme/license"   "BSD Artistic License";
+    item: "gtk-theme"       "Windows Vista";
+    item: "icon-theme"      "MokshaSeven-Icons";
     item: "elm-theme"       "MokshaRadiance";
-	item: "version"         "110";
+    item: "version"         "110";
 }
 #define NO_COLOR                 255 255 255 0
 #define VISIBLE                  255 255 255 255
 
 collections {
-	#include "mokshapreview.edc"
-	#include "net.edc"
+    #include "mokshapreview.edc"
+    #include "net.edc"
 }
 
 /* Specturm used in all the gradient icons
@@ -7772,31 +7772,31 @@ script {										\
     * be provided by using more group names. eg, "e/shelf/black/base" */
    group { name: "e/shelf/alternate_vertical/base";
       images {
-	 image: "shelf_alt_vert_bg.png" COMP;
-// 	 image: "shelf_alt_bg_left.png" COMP;
-// 	 image: "shelf_alt_bg_right.png" COMP;
-	 image: "shelf_alt_over.png" COMP;
-// 	 image: "shelf_alt_over_left.png" COMP;
-// 	 image: "shelf_alt_over_right.png" COMP;
+        image: "shelf_alt_vert_bg.png" COMP;
+    //  image: "shelf_alt_bg_left.png" COMP;
+    //  image: "shelf_alt_bg_right.png" COMP;
+        image: "shelf_alt_over.png" COMP;
+    //  image: "shelf_alt_over_left.png" COMP;
+    //  image: "shelf_alt_over_right.png" COMP;
       }
       SIZE_SCRIPT
-      parts {
-	 part { name: "base";
-	    mouse_events: 0;
-	    description { state: "default" 0.0;
-               color_class: "shelf_base";
-	       image.normal: "shelf_alt_vert_bg.png";
-	       fill.smooth: 0;
-	    }
-// 	    description { state: "left" 0.0;
-// 	       image.normal: "shelf_alt_bg_left.png";
-// 	       fill.smooth: 0;
-// 	    }
-// 	    description { state: "right" 0.0;
-// 	       image.normal: "shelf_alt_bg_right.png";
-// 	       fill.smooth: 0;
-// 	    }
-	 }
+   parts {
+    part { name: "base";
+        mouse_events: 0;
+        description { state: "default" 0.0;
+            color_class: "shelf_base";
+            image.normal: "shelf_alt_vert_bg.png";
+            fill.smooth: 0;
+        }
+//     description { state: "left" 0.0;
+//        image.normal: "shelf_alt_bg_left.png";
+//        fill.smooth: 0;
+//     }
+//     description { state: "right" 0.0;
+//        image.normal: "shelf_alt_bg_right.png";
+//        fill.smooth: 0;
+//     }
+     }
      part {
             name: "spacer";
             type: SPACER;
@@ -7810,41 +7810,41 @@ script {										\
                inherit: "default";
             }
          }
-	 part { name: "e.swallow.content";
-	    type: SWALLOW;
-	    description { state: "default" 0.0;
-	       rel1 {
+    part { name: "e.swallow.content";
+        type: SWALLOW;
+        description { state: "default" 0.0;
+            rel1 {
                 relative: 0.0 0.0;
                 offset: 0 0;
-	       }
-	       rel2 {
+            }
+            rel2 {
                 relative: 1.0 1.0;
                 offset: -1 -1;
-	       }
+            }
            rel.to: "spacer";
-	    }
-	 }
-	 part { name: "over";
-	    mouse_events: 0;
-	    description { state: "default" 0.0;
-	       image.normal: "shelf_alt_over.png";
-	       image.border: 5 5 5 5;
-	       image.middle: 0;
-	       fill.smooth: 0;
-	    }
-// 	    description { state: "left" 0.0;
-// 	       image.normal: "shelf_alt_over_left.png";
-// 	       image.border: 5 5 5 5;
-// 	       image.middle: 0;
-// 	       fill.smooth: 0;
-// 	    }
-// 	    description { state: "right" 0.0;
-// 	       image.normal: "shelf_alt_over_right.png";
-// 	       image.border: 5 5 5 5;
-// 	       image.middle: 0;
-// 	       fill.smooth: 0;
-// 	    }
-	 }
+        }
+    }
+    part { name: "over";
+        mouse_events: 0;
+        description { state: "default" 0.0;
+            image.normal: "shelf_alt_over.png";
+            image.border: 5 5 5 5;
+            image.middle: 0;
+            fill.smooth: 0;
+        }
+//      description { state: "left" 0.0;
+//        image.normal: "shelf_alt_over_left.png";
+//        image.border: 5 5 5 5;
+//        image.middle: 0;
+//        fill.smooth: 0;
+//     }
+//     description { state: "right" 0.0;
+//        image.normal: "shelf_alt_over_right.png";
+//        image.border: 5 5 5 5;
+//        image.middle: 0;
+//        fill.smooth: 0;
+//     }
+     }
       }
       /* Because programs can not respond to 2 different types of signals,
        * the programs are split into individual programs that point towards
@@ -11552,74 +11552,70 @@ images
 }
    group
      {
-	name: "modules/cpu/main";
-	parts
-	  {
-	     part
-	       {
-		  name:           "fade_clip";
-		  type:           RECT;
-		  mouse_events:   0;
-		  description
-		    {
-		       state: "default" 0.0;
-		       color: 255 255 255 255;
-		    }
-	       }
-	     part
-	       {
-		  name: "cpu";
-		  clip_to: "fade_clip";
-		  description
-		    {
-		       state: "default" 0.0;
-		       aspect: 1.0 1.0;
-		       aspect_preference: BOTH;
-		       align: 0.5 0.5;
-		       image
-			 {
-			    normal: "e17_cpufreq_cpu1.png";
-			 }
-		    }
-	       }
-	     part
-			{
-				name: "load";
-				type: TEXTBLOCK;
-				clip_to: "fade_clip";
-				mouse_events: 0;
-				scale: 1;
-				description
-				{
-					state: "default" 0.0;
-					rel1
-					{
-						relative: 0.0 0.05;
-						offset: 0 0;
-						to: "cpu";
-					}
-					rel2
-					{
-						relative: 1.0 0.9;
-						offset: -1 -1;
-						to: "cpu";
-					}
-					color:  255 255 255 255;
-					color_class: "module_label";
-					text
-					{
-						text: "think!";
-						min: 0 1;
-						//fit: 1 1;
-						text_class: "module_small";
-						source: "load"; 
-						style: "cpu_style";
+      name: "modules/cpu/main";
+      parts
+      {
+         part
+           {
+            name: "fade_clip";
+            type: RECT;
+            mouse_events: 0;
+            description
+            {
+               state: "default" 0.0;
+               color: 255 255 255 255;
+            }
+           }
+          part
+           {
+            name: "cpu";
+            clip_to: "fade_clip";
+            description
+            {
+                state: "default" 0.0;
+                aspect: 1.0 1.0;
+                aspect_preference: BOTH;
+                align: 0.5 0.5;
+                image.normal: "e17_cpufreq_cpu1.png";
+            }
+           }
+          part
+            {
+                name: "load";
+                type: TEXTBLOCK;
+                clip_to: "fade_clip";
+                mouse_events: 0;
+                scale: 1;
+                description
+                {
+                    state: "default" 0.0;
+                    rel1
+                    {
+                        relative: 0.0 0.05;
+                        offset: 0 0;
+                        to: "cpu";
+                    }
+                    rel2
+                    {
+                        relative: 1.0 0.9;
+                        offset: -1 -1;
+                        to: "cpu";
+                    }
+                    color:  255 255 255 255;
+                    color_class: "module_label";
+                    text
+                    {
+                        text: "think!";
+                        min: 0 1;
+                        //fit: 1 1;
+                        text_class: "module_small";
+                        source: "load"; 
+                        style: "cpu_style";
                         ellipsis: -1;
-					}
-				}
-			}
-
-	  }
+                    }
+                }
+            }
+        }
      }
 
 
@@ -11677,337 +11673,320 @@ images
 
    group
      {
-	name: "modules/mem/main";
-	min: 4 4;
-//	max: 128 128;
-	script 
-	  {
-	   public message(Msg_Type:type, id, ...) 
-	       {
-		       new Float:val;
-	  		   new convert;		       
-	           new buf[11];
-			
-			if ((type == MSG_FLOAT) && (id == 1)) 
-		    {	       
-	           buf[0] = 0;			   
-			   
-			   val = getfarg(2);
-			   convert = round(val*20);
-	  		   convert = convert + 40;
-			   if (convert < 10) {snprintf(buf, 10, "0%i", convert);}
-	 		   else {snprintf(buf, 10,  "%i", convert);}	
-		       set_state(PART:"realdial", buf, 0.0);
-		    }
-			
-		  if ((type == MSG_FLOAT) && (id == 2)) 
-		    {		       
-	           buf[0] = 0;			   
-			   
-			   val = getfarg(2);
-			   convert = round(val*-20);
-			   convert = 19 + convert;
-			   if (convert < 10) {snprintf(buf, 10, "0%i", convert);}
-	 		   else {snprintf(buf, 10,  "%i", convert);}	
-		       set_state(PART:"swapdial", buf, 0.0);
-		    }		  
-	       }	     
-	  }
-	
+    name: "modules/mem/main";
+    min: 4 4;
+//  max: 128 128;
+    script 
+        {
+        public message(Msg_Type:type, id, ...) 
+          {
+            new Float:val;
+            new convert;
+            new buf[11];
+
+            if ((type == MSG_FLOAT) && (id == 1)) 
+              {
+                 buf[0] = 0;
+
+                 val = getfarg(2);
+                 convert = round(val*20);
+                 convert = convert + 40;
+                 if (convert < 10) {snprintf(buf, 10, "0%i", convert);}
+                 else {snprintf(buf, 10,  "%i", convert);}
+                 set_state(PART:"realdial", buf, 0.0);
+              }
+
+            if ((type == MSG_FLOAT) && (id == 2)) 
+              {
+                 buf[0] = 0;
+
+                 val = getfarg(2);
+                 convert = round(val*-20);
+                 convert = 19 + convert;
+                 if (convert < 10) {snprintf(buf, 10, "0%i", convert);}
+                 else {snprintf(buf, 10,  "%i", convert);}
+                 set_state(PART:"swapdial", buf, 0.0);
+              }
+        }
+      }
+
    parts {
       part {
-	 name: "base";
-	 clip_to: "fade_clip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 0.5;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       relative: 0.0 0.0;
-	    }
-	    rel2 {
-	       relative: 1.0 1.0;
-	    }
-	    image {
-	       normal: "widget_bg.png";
-	    }
-	 }
-      }
-	 part {
-	 name: "base_overlay";
-	 clip_to: "fade_clip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 0.5;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       relative: 0.0 0.0;
-	    }
-	    rel2 {
-	       relative: 1.0 1.0;
-	    }
-	    image {
-	       normal: "mem_gauge.png";
-	    }
-	 }
+        name: "base";
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            align: 0.5 0.5;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1.relative: 0.0 0.0;
+            rel2.relative: 1.0 1.0;
+            image.normal: "widget_bg.png";
+        }
       }
       part {
-	 name: "overlay";
-	 clip_to: "fade_clip";
-	 description {
-	    state: "default" 0.0;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       to: "base";
-	    }
-	    rel2 {
-	       to: "base";
-	    }
-	    image {
-	       normal: "widget_fg.png";
-	    }
-	 }
+        name: "base_overlay";
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            align: 0.5 0.5;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1.relative: 0.0 0.0;
+            rel2.relative: 1.0 1.0;
+            image.normal: "mem_gauge.png";
+        }
+     }
+      part {
+        name: "overlay";
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                to: "base";
+            }
+            rel2 {
+                to: "base";
+            }
+            image {
+                normal: "widget_fg.png";
+            }
+        }
       }
       part {
-	 name:           "real_label";
-	 type:           TEXT;
-	 effect:  SOFT_SHADOW;
-	 mouse_events: 0;
-	 description {
-	    state: "default" 0.0;
-		color: 255 255 255 0;
-		color3: 0 0 0 0;
-		visible: 0;
-	    align: 0.5 0.5;
-		rel1 {
-	       relative: 0.5  0.45;
-		   offset:  0 0;
-		   to: "fade_clip";
-	    }
-	    rel2 {
-	       relative: 0.5  0.45;
-		   offset:  0 0;
-		   to: "fade_clip";
-	    }
-
-	    text {
-	       font:     "Edje-Vera-Bold";
-		   text: "Real";
-	       size:     10;
-	       min:      1 1;
-	       align:    0.5 0.5;
-	       ellipsis: -1;
-           text_class: "module_small";	       
-	    }
-	 }
-	 description
-	 {
-	 	state: "visible" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	    color: 221 221 221 255;
-	    color3: 0 0 0 64;
-		color_class: "module_label";
-	 }
+        name: "real_label";
+        type: TEXT;
+        effect:  SOFT_SHADOW;
+        mouse_events: 0;
+        description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+            color3: 0 0 0 0;
+            visible: 0;
+            align: 0.5 0.5;
+            rel1 {
+                relative: 0.5  0.45;
+                offset:  0 0;
+                to: "fade_clip";
+            }
+            rel2 {
+                relative: 0.5  0.45;
+                offset:  0 0;
+                to: "fade_clip";
+            }
+            text {
+                font:  "Edje-Vera-Bold";
+                text: "Real";
+                size:     10;
+                min:      1 1;
+                align:    0.5 0.5;
+                ellipsis: -1;
+                text_class: "module_small";
+            }
+        }
+        description {
+            state: "visible" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+            color: 221 221 221 255;
+            color3: 0 0 0 64;
+            color_class: "module_label";
+        }
       }
       part {
-	 name:           "fade_clip";
-	 type:           RECT;
-//	 mouse_events:   0;
-	 description {
-	    state: "default" 0.0;
-	    color: 255 255 255 255;
-	 }
-	 description {
-	    state: "faded" 0.0;
-	    color: 255 255 255 1;
-	 }
+        name: "fade_clip";
+        type: RECT;
+        //	 mouse_events:   0;
+        description {
+            state: "default" 0.0;
+            color: 255 255 255 255;
+        }
+        description {
+            state: "faded" 0.0;
+            color: 255 255 255 1;
+        }
       }
 
       part {
-	 name: "realdial";
-	 mouse_events: 0;
-	 description {
-	    state: "default" 0.0;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       relative: 0.05 0.05;
-	    }
-	    rel2 {
-	       relative: 0.95 0.95;
-	    }
-	    image {
-	       normal: "clock/e17_clock_minutes_00.png";
-	    }
-	 }
+        name: "realdial";
+        mouse_events: 0;
+        description {
+            state: "default" 0.0;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                relative: 0.05 0.05;
+            }
+            rel2 {
+                relative: 0.95 0.95;
+            }
+            image {
+                normal: "clock/e17_clock_minutes_00.png";
+            }
+        }
 #ifdef HANDREAL
 # undef HANDREAL
 #endif
 #define HANDREAL(num) \
-	    description { \
-	       state: num 0.0; \
-	       inherit: "default" 0.0; \
-	       image { \
-		  normal: "clock/e17_clock_minutes_"num".png"; \
-	       } \
-	    }
-	 HANDREAL("40")
-	 HANDREAL("41")
-	 HANDREAL("42")
-	 HANDREAL("43")
-	 HANDREAL("44")
-	 HANDREAL("45")
-	 HANDREAL("46")
-	 HANDREAL("47")
-	 HANDREAL("48")
-	 HANDREAL("49")
-	 HANDREAL("50")
-	 HANDREAL("51")
-	 HANDREAL("52")
-	 HANDREAL("53")
-	 HANDREAL("54")
-	 HANDREAL("55")
-	 HANDREAL("56")
-	 HANDREAL("57")
-	 HANDREAL("58")
-	 HANDREAL("59")
-	 HANDREAL("00")
+    description { \
+        state: num 0.0; \
+        inherit: "default" 0.0; \
+        image { \
+            normal: "clock/e17_clock_minutes_"num".png"; \
+        } \
+     }
+    HANDREAL("40")
+    HANDREAL("41")
+    HANDREAL("42")
+    HANDREAL("43")
+    HANDREAL("44")
+    HANDREAL("45")
+    HANDREAL("46")
+    HANDREAL("47")
+    HANDREAL("48")
+    HANDREAL("49")
+    HANDREAL("50")
+    HANDREAL("51")
+    HANDREAL("52")
+    HANDREAL("53")
+    HANDREAL("54")
+    HANDREAL("55")
+    HANDREAL("56")
+    HANDREAL("57")
+    HANDREAL("58")
+    HANDREAL("59")
+    HANDREAL("00")
       } // realdial part
 
-      part {
-	 name: "swapdial";
-	 mouse_events: 0;
-	 description {
-	    state: "default" 0.0;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       relative: 0.05 0.05;
-	    }
-	    rel2 {
-	       relative: 0.95 0.95;
-	    }
-	    image {
-	       normal: "clock/e17_clock_minutes_00.png";
-	    }
-	 }
+    part {
+        name: "swapdial";
+        mouse_events: 0;
+        description {
+            state: "default" 0.0;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                relative: 0.05 0.05;
+            }
+            rel2 {
+                relative: 0.95 0.95;
+            }
+            image {
+                normal: "clock/e17_clock_minutes_00.png";
+            }
+        }
 #ifdef HANDSWAP
 # undef HANDSWAP
 #endif
 #define HANDSWAP(num) \
-	    description { \
-	       state: num 0.0; \
-	       inherit: "default" 0.0; \
-	       image { \
-		  normal: "clock/e17_clock_minutes_"num".png"; \
-	       } \
-	    }
-	 HANDSWAP("01")
-	 HANDSWAP("02")
-	 HANDSWAP("03")
-	 HANDSWAP("04")
-	 HANDSWAP("05")
-	 HANDSWAP("06")
-	 HANDSWAP("07")
-	 HANDSWAP("08")
-	 HANDSWAP("09")
-	 HANDSWAP("10")
-	 HANDSWAP("11")
-	 HANDSWAP("12")
-	 HANDSWAP("13")
-	 HANDSWAP("14")
-	 HANDSWAP("15")
-	 HANDSWAP("16")
-	 HANDSWAP("17")
-	 HANDSWAP("18")
-	 HANDSWAP("19")
-	 HANDSWAP("20")
+    description { \
+        state: num 0.0; \
+        inherit: "default" 0.0; \
+        image { \
+        normal: "clock/e17_clock_minutes_"num".png"; \
+        } \
+    }
+    HANDSWAP("01")
+    HANDSWAP("02")
+    HANDSWAP("03")
+    HANDSWAP("04")
+    HANDSWAP("05")
+    HANDSWAP("06")
+    HANDSWAP("07")
+    HANDSWAP("08")
+    HANDSWAP("09")
+    HANDSWAP("10")
+    HANDSWAP("11")
+    HANDSWAP("12")
+    HANDSWAP("13")
+    HANDSWAP("14")
+    HANDSWAP("15")
+    HANDSWAP("16")
+    HANDSWAP("17")
+    HANDSWAP("18")
+    HANDSWAP("19")
+    HANDSWAP("20")
       } // swapdial part
-	 part {
-	 name:           "swap_label";
-	 type:           TEXT;
-	 effect:  SOFT_SHADOW;
-	 mouse_events: 0;
-	 description {
-	    state: "default" 0.0;
-		color: 255 255 255 0;
-		color3: 0 0 0 0;		
-		visible: 0;
-	    align: 0.5 0.5;
-	    rel1 {
-	       relative: 0.5  0.7;
-		   offset:  0 0;
-   		   to: "fade_clip";
-	    }
-	    rel2 {
-	       relative: 0.5  0.7;
-		   offset:  0 0;
-		   to: "fade_clip";
-	    }
-
-	    text {
-		   text: "Swap";
-	       font:     "Edje-Vera-Bold";
-	       size:     10;
-	       min:      1 1;
-	       align:    0.5 0.5;
-	       ellipsis: -1;
-           text_class: "module_small";	       
-	    }
-	 }
-	 description
-	 {
-	 	state: "visible" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	    color: 221 221 221 255;
-	    color3: 0 0 0 64;
-	    color_class: "module_label";
-	 }
+    part {
+    name:           "swap_label";
+    type:           TEXT;
+    effect:  SOFT_SHADOW;
+    mouse_events: 0;
+    description {
+        state: "default" 0.0;
+        color: 255 255 255 0;
+        color3: 0 0 0 0;
+        visible: 0;
+        align: 0.5 0.5;
+        rel1 {
+            relative: 0.5  0.7;
+            offset:  0 0;
+            to: "fade_clip";
+        }
+        rel2 {
+            relative: 0.5  0.7;
+            offset:  0 0;
+            to: "fade_clip";
+        }
+        text {
+            text: "Swap";
+            font:     "Edje-Vera-Bold";
+            size:     10;
+            min:      1 1;
+            align:    0.5 0.5;
+            ellipsis: -1;
+            text_class: "module_small";
+        }
+     }
+     description
+     {
+        state: "visible" 0.0;
+        inherit: "default" 0.0;
+        visible: 1;
+        color: 221 221 221 255;
+        color3: 0 0 0 64;
+        color_class: "module_label";
+     }
       }
    } // parts
 
 programs {
-	   program {
-	 name: "known";
-	 signal: "e,state,known";
-	 source: "e";
-	 action: STATE_SET "default" 0.0;
-	 target: "fade_clip";
-      }
-      program {
-	 name: "unknown";
-	 signal: "e,state,unknown";
-	 source: "e";
-	 action: STATE_SET "faded" 0.0;
-	 target: "fade_clip";
-      }
-   	     program 
-	       {
-		  name: "go_active";
-		  signal: "label_active";
-		  source: "";
-		  action: STATE_SET "visible" 0.0;
-		  transition: SINUSOIDAL 0.5;
-		  target: "real_label";
-		  target: "swap_label";
-	       }
-	     program 
-	       {
-		  name: "go_passive";
-		  signal: "label_passive";
-		  source: "";
-		  action: STATE_SET "default" 0.0;
-		  transition: SINUSOIDAL 0.5;		  
-		  target: "swap_label";
-		  target: "real_label";
-	       }
-   }
-     }
+    program {
+        name: "known";
+        signal: "e,state,known";
+        source: "e";
+        action: STATE_SET "default" 0.0;
+        target: "fade_clip";
+    }
+    program {
+        name: "unknown";
+        signal: "e,state,unknown";
+        source: "e";
+        action: STATE_SET "faded" 0.0;
+        target: "fade_clip";
+    }
+    program {
+        name: "go_active";
+        signal: "label_active";
+        source: "";
+        action: STATE_SET "visible" 0.0;
+        transition: SINUSOIDAL 0.5;
+        target: "real_label";
+        target: "swap_label";
+    }
+    program {
+        name: "go_passive";
+        signal: "label_passive";
+        source: "";
+        action: STATE_SET "default" 0.0;
+        transition: SINUSOIDAL 0.5;
+        target: "swap_label";
+        target: "real_label";
+        }
+    }
+}
 
 
 
@@ -12182,150 +12161,150 @@ group {
 	  else {convert = convert + 40;}
 
 	 if (convert < 10) {snprintf(buf, 10, "0%i", convert);}
-	 else            {snprintf(buf, 10,  "%i", convert);}	  
+	 else            {snprintf(buf, 10,  "%i", convert);}
 	  set_state(PART:"dial", buf, 0.0);
        }
     }
    }
-   
+
    parts {
       part {
-	 name: "base";
-	 clip_to: "fade_clip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 0.5;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-		rel1 {
-	       relative: 0.0 0.0;
-	    }
-	    rel2 {
-	       relative: 1.0 1.0;
-	    }
-	    image {
-	       normal: "widget_bg.png";
-	    }
-	 }
+        name: "base";
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            align: 0.5 0.5;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                relative: 0.0 0.0;
+            }
+            rel2 {
+                relative: 1.0 1.0;
+            }
+            image {
+                normal: "widget_bg.png";
+            }
+        }
       }
-	 part {
-	 name: "base_overlay";
-	 clip_to: "fade_clip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 0.5;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       relative: 0.0 0.0;
-	    }
-	    rel2 {
-	       relative: 1.0 1.0;
-	    }
-	    image {
-	       normal: "temp_gauge.png";
-	    }
-	 }
+     part {
+        name: "base_overlay";
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            align: 0.5 0.5;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                relative: 0.0 0.0;
+            }
+            rel2 {
+                relative: 1.0 1.0;
+            }
+            image {
+                normal: "temp_gauge.png";
+            }
+        }
+      }
+     part {
+        name: "overlay";
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                to: "base";
+            }
+            rel2 {
+                to: "base";
+            }
+            image {
+                normal: "widget_fg.png";
+            }
+        }
+      }
+     part {
+        name: "e.text.reading";
+        type: TEXT;
+        clip_to: "fade_clip";
+        description {
+            state: "default" 0.0;
+            align: 0.5 0.5;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                relative: 0.5  0.77;
+                offset:  0 0;
+            }
+            rel2 {
+                relative: 0.5  0.77;
+                offset:  0 0;
+            }
+            color: 221 221 221 255;
+            color_class: "module_label";
+            text {
+                text:     "99^C";
+                font:     "Edje-Vera-Bold";
+                size:     10;
+                min:      1 1;
+                align:    0.0 0.0;
+                text_class: "module_small";
+            }
+        }
       }
       part {
-	 name: "overlay";
-	 clip_to: "fade_clip";
-	 description {
-	    state: "default" 0.0;
-   	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-		rel1 {
-	       to: "base";
-	    }
-	    rel2 {
-	       to: "base";
-	    }
-	    image {
-	       normal: "widget_fg.png";
-	    }
-	 }
-      }
-      part {
-	 name:           "e.text.reading";
-	 type:           TEXT;
-	 clip_to:        "fade_clip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 0.5;
-   	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-		rel1 {
-	       relative: 0.5  0.77;
-		   offset:  0 0;
-	    }
-	    rel2 {
-	       relative: 0.5  0.77;
-		   offset:  0 0;
-	    }
-		color: 221 221 221 255;
-	    color_class: "module_label";
-	    text {
-	       text:     "99^C";
-	       font:     "Edje-Vera-Bold";
-	       size:     10;
-	       min:      1 1;
-	       align:    0.0 0.0;
-               text_class: "module_small";	       
-	    }
-	 }
-      }
-      part {
-	 name:           "fade_clip";
-	 type:           RECT;
-	 mouse_events:   0;
-	 description {
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    state: "default" 0.0;
-	    color: 255 255 255 255;
-	 }
-	 description {
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    state: "faded" 0.0;
-	    color: 255 255 255 128;
-	 }
-	 description {
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    state: "high" 0.0;
-	    color: 255 0 0 225;
-	 }
+        name: "fade_clip";
+        type: RECT;
+        mouse_events:   0;
+        description {
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            state: "default" 0.0;
+            color: 255 255 255 255;
+        }
+        description {
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            state: "faded" 0.0;
+            color: 255 255 255 128;
+        }
+        description {
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            state: "high" 0.0;
+            color: 255 0 0 225;
+        }
       }
 
       part {
-	 name: "dial";
-	 mouse_events: 0;
-	 description {
-	    state: "default" 0.0;
-	    aspect: 1.0 1.0;
-	    aspect_preference: BOTH;
-	    rel1 {
-	       relative: 0.05 0.05;
-	    }
-	    rel2 {
-	       relative: 0.95 0.95;
-	    }
-	    image {
-	       normal: "clock/e17_clock_minutes_00.png";
-	    }
-	 }
+        name: "dial";
+        mouse_events: 0;
+        description {
+            state: "default" 0.0;
+            aspect: 1.0 1.0;
+            aspect_preference: BOTH;
+            rel1 {
+                relative: 0.05 0.05;
+            }
+            rel2 {
+                relative: 0.95 0.95;
+            }
+            image {
+                normal: "clock/e17_clock_minutes_00.png";
+            }
+        }
 #ifdef HAND2
 # undef HAND2
 #endif
 #define HAND2(num) \
-	    description { \
-	       state: num 0.0; \
-	       inherit: "default" 0.0; \
-	       image { \
-		  normal: "clock/e17_clock_minutes_"num".png"; \
-	       } \
-	    }
+    description { \
+            state: num 0.0; \
+            inherit: "default" 0.0; \
+            image { \
+                normal: "clock/e17_clock_minutes_"num".png"; \
+            } \
+        }
 	 HAND2("00")
 	 HAND2("01")
 	 HAND2("02")
@@ -12371,45 +12350,45 @@ group {
    } // parts
 
 programs {
-	   program {
-	 name: "known";
-	 signal: "e,state,known";
-	 source: "e";
-	 action: STATE_SET "default" 0.0;
-	 target: "fade_clip";
-      }
-      program {
-	 name: "unknown";
-	 signal: "e,state,unknown";
-	 source: "e";
-	 action: STATE_SET "faded" 0.0;
-	 target: "fade_clip";
-      }
-		program {
-			signal: "e,state,high"; source: "e";
-			action: STATE_SET "default" 0.0;
-			target: "fade_clip";
-			after: "pulse1";
-		}
-		program {
-			name: "pulse1"; 
-			action: STATE_SET "high" 0.0;
-			transition: DECELERATE 0.5;
-			target: "fade_clip";
-			after: "pulse2";
-		}
-		program {
-			name: "pulse2"; 
-			action: STATE_SET "default" 0.0;
-			transition: ACCELERATE 0.5;
-			target: "fade_clip";
-			after: "pulse1";
-		}
-		program {
-			signal: "e,state,ok"; source: "e";
-			action: STATE_SET "default" 0.0;
-			target: "fade_clip";
-		}
+    program {
+        name: "known";
+        signal: "e,state,known";
+        source: "e";
+        action: STATE_SET "default" 0.0;
+        target: "fade_clip";
+    }
+    program {
+        name: "unknown";
+        signal: "e,state,unknown";
+        source: "e";
+        action: STATE_SET "faded" 0.0;
+        target: "fade_clip";
+    }
+    program {
+        signal: "e,state,high"; source: "e";
+        action: STATE_SET "default" 0.0;
+        target: "fade_clip";
+        after: "pulse1";
+    }
+    program {
+        name: "pulse1"; 
+        action: STATE_SET "high" 0.0;
+        transition: DECELERATE 0.5;
+        target: "fade_clip";
+        after: "pulse2";
+    }
+    program {
+        name: "pulse2"; 
+        action: STATE_SET "default" 0.0;
+        transition: ACCELERATE 0.5;
+        target: "fade_clip";
+        after: "pulse1";
+    }
+    program {
+        signal: "e,state,ok"; source: "e";
+        action: STATE_SET "default" 0.0;
+        target: "fade_clip";
+    }
    }
 }
 
@@ -22174,7 +22153,7 @@ programs {
                state: "default" 0.0;
                align: 0.5 0.0;
                fixed: 1 1;
-	       color: 224 224 224 255;
+               color: 224 224 224 255;
                color3: 0 0 0 64;
                rel1 {
                   to: "icon0";
@@ -22188,7 +22167,7 @@ programs {
                }
                text {
                   style: "fileman_desktop_icon_name";
-	          text_source: "e.text.label";
+                  text_source: "e.text.label";
                   min: 0 1;
                }
             }
@@ -33339,25 +33318,24 @@ group { name: "e/widgets/entry/selection";
          image: "exq-logo.png" COMP;
          image: "exq-dot.png" COMP;
          image: "exq-dot-glow.png" COMP;
-	 image: "bluew.png" COMP;
+         image: "bluew.png" COMP;
       }
       script {
          public is_ready;
          public do_end;
       }
       parts {
-         part {
+        part {
             name: "base";
+            description {
+                state: "default" 0.0;
+                image {
+                    normal: "bluew.png";
+                }
+            }
+        }
 
-	 description {
-	    state: "default" 0.0;
-	    image {
-	       normal: "bluew.png";
-	    }
-	 }
-      }
-
-	part {
+        part {
             name: "light";
             description {
                state: "default" 0.0;
@@ -33369,7 +33347,7 @@ group { name: "e/widgets/entry/selection";
                max: 380 180;
                image.normal: "exq-bglight.png";
                color: 255 255 255 0;
-	       }
+            }
             description {
                state: "visible" 0.0;
                inherit: "default" 0.0;
@@ -37112,7 +37090,7 @@ group { name: "e/widgets/entry/selection";
                   min: 0 1;
                   align: 0.5 0.5;
                   ellipsis: -1;
-	          text_class: "fileman_icon";
+                  text_class: "fileman_icon";
                }
             }
             description {
@@ -37852,7 +37830,7 @@ group { name: "e/widgets/entry/selection";
                }
             }
             description {
-	        state: "selected" 0.0;
+                state: "selected" 0.0;
                 inherit: "default" 0.0;
                 color: 200 200 200 255;
             }
@@ -37862,19 +37840,19 @@ group { name: "e/widgets/entry/selection";
             type: RECT;
             mouse_events: 0;
             description {
-               state: "default" 0.0;
-	       visible: 0;
-	       rel1.to: "base";
-	       rel1.relative: 0.0 1.0;
-	       rel2.to: "base";
+                state: "default" 0.0;
+                visible: 0;
+                rel1.to: "base";
+                rel1.relative: 0.0 1.0;
+                rel2.to: "base";
             }
             description {
-               state: "detail" 0.0;
-	       inherit: "default" 0.0;
-	       rel1.to: "e.text.detail";
-	       rel2.to: "e.text.detail";
+                state: "detail" 0.0;
+                inherit: "default" 0.0;
+                rel1.to: "e.text.detail";
+                rel2.to: "e.text.detail";
             }
-	 }
+        }
          part {
             name: "event";
             type: RECT;
@@ -37892,8 +37870,8 @@ group { name: "e/widgets/entry/selection";
             action: STATE_SET "selected" 0.0;
             target: "bg";
             target: "outline";
-	    target: "e.text.label";
-	    target: "e.text.detail";
+            target: "e.text.label";
+            target: "e.text.detail";
             transition: ACCELERATE 0.0;
          }
          program {
@@ -37904,8 +37882,8 @@ group { name: "e/widgets/entry/selection";
             transition: LINEAR 0.0;
             target: "bg";
             target: "outline";
-	    target: "e.text.label";
-	    target: "e.text.detail";
+            target: "e.text.label";
+            target: "e.text.detail";
          }
          program {
             name: "mark";
@@ -38559,7 +38537,7 @@ group { name: "e/widgets/entry/selection";
 	group {
 		name: "e/modules/conf/main";
 		images {
-                        image: "icon_configuration.png" COMP;
+            image: "icon_configuration.png" COMP;
 			image: "bt_base1.png" COMP;
 			image: "bt_base2.png" COMP;
 			image: "bt_hilight.png" COMP;
@@ -38577,7 +38555,7 @@ group { name: "e/widgets/entry/selection";
 					state: "default" 0.0;
 					fixed: 1 1;
 					align: 0.5 0.5;
-               min: 32 16;
+                    min: 32 16;
 					image {
 						normal: "bt_base2.png";
 						border: 7 7 7 7;
@@ -38708,7 +38686,7 @@ group { name: "e/widgets/entry/selection";
 					state: "default" 0.0;
 					fixed: 1 1;
 					align: 0.5 0.5;
-               min: 32 16;
+                    min: 32 16;
 					image {
 						normal: "bt_base2.png";
 						border: 7 7 7 7;
