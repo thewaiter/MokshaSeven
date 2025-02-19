@@ -49,7 +49,7 @@ data {
     item: "theme/author"    "Bodhi Team";
     item: "theme/license"   "BSD Artistic License";
     item: "gtk-theme"       "Windows Vista";
-    item: "icon-theme"      "MokshaSeven-Icons";
+    item: "icon-theme"      "MokshaSeven";
     item: "elm-theme"       "MokshaRadiance";
     item: "version"         "110";
 }
