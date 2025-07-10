@@ -41,7 +41,7 @@
  * and make sure you have replaced/provided everything here.
  */
  
-efl_version: 1 20;
+efl_version: 1 25;
 
 data {
     item: "theme/name"      "seven";
@@ -51,7 +51,7 @@ data {
     item: "gtk-theme"       "Windows Vista";
     item: "icon-theme"      "MokshaSeven";
     item: "elm-theme"       "MokshaRadiance";
-    item: "version"         "110";
+    item: "version"         "125";
 }
 #define NO_COLOR                 255 255 255 0
 #define VISIBLE                  255 255 255 255
